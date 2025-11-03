@@ -1,0 +1,9 @@
+name: Generate and push latest version of resume to R2 bucket on commit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'resume-generator/**'
+    workflow_dispatch:
+

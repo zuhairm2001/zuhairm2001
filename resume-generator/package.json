@@ -1,6 +1,15 @@
 {
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.922.0",
     "marked": "^16.4.1",
     "puppeteer": "^24.27.0"
+  },
+  "name": "resume-generator",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
   }
 }
