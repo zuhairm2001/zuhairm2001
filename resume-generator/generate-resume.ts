@@ -1,13 +1,7 @@
 import fs from "fs";
 import { marked } from "marked";
 import puppeteer from "puppeteer";
-import {
-  S3Client,
-  ListBucketsCommand,
-  ListObjectsCommand,
-  GetObjectCommand,
-  PutObjectCommand,
-} from "@aws-sdk/client-s3";
+import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 
 const markdown = fs.readFileSync("resume.md", "utf-8");
 const htmlContent = marked(markdown);
@@ -18,7 +12,7 @@ const fullHTML = `
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Styled Markdown PDF</title>
+  <title>zuhair's resume</title>
   <style>${css}</style>
 </head>
 <body class="page">
@@ -40,22 +34,28 @@ const fullHTML = `
   console.log("PDF generated: output.pdf");
 })();
 
+const endpoint = Bun.env.S3_ENDPOINT!;
+const accessKeyId = Bun.env.S3_ACCESS_KEY!;
+const secretAccessKey = Bun.env.S3_SECRET_KEY!;
+
 const S3 = new S3Client({
   region: "auto",
-  endpoint: Bun.env.S3_ENDPOINT!,
+  endpoint: endpoint,
   credentials: {
-    accessKeyId: Bun.env.S3_ACCESS_KEY!,
-    secretAccessKey: Bun.env.S3_SECRET_KEY!,
+    accessKeyId: accessKeyId,
+    secretAccessKey: secretAccessKey,
   },
 });
 
-await S3.send(new PutObjectCommand({
-  Bucket: "personal-bucket",
-  Key: "resume.pdf",
-  Body: fs.readFileSync("output.pdf"),
-  ContentType: "application/pdf",
-}));
-
-console.log(
-  await S3.send(new ListObjectsCommand({ Bucket: "personal-bucket" })),
-);
+try {
+  await S3.send(
+    new PutObjectCommand({
+      Bucket: "personal-bucket",
+      Key: "resume.pdf",
+      Body: fs.readFileSync("output.pdf"),
+      ContentType: "application/pdf",
+    }),
+  );
+} catch (error) {
+  console.error("Error uploading file to S3:", error);
+}
