@@ -15,7 +15,7 @@ Professional software engineer with hands-on experience building and maintaining
 
 ## Work Experience
 ### Software Engineer | Microsoft <span class="spacer"></span>Dec 2025 - Present
-*Engineer on Azure Kubernetes Service*<span class="spacer"></span>Go | Azure
+*Engineer on Azure Kubernetes Service*<span class="spacer"></span>Go | Azure | Distributed Systems
 
 - **Platform Development:** Contributed to the core AKS service, enabling managed Kubernetes clusters at scale for enterprise customers.  
 - **Scalability & Reliability:** Worked on multi-tenant orchestration, autoscaling, and high availability of clusters across regions.  

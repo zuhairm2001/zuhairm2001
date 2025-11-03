@@ -23,7 +23,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Setup Puppeteer
-        uses: mujo-code/puppeteer-headful
+        uses: mujo-code/puppeteer-headful@16.6.0
 
       - name: Generate and Upload PDF resume
         env:
