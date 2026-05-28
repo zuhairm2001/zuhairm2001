@@ -10,7 +10,7 @@ https://github.com/zuhairm2001
 
 ## Professional Summary
 
-Professional software engineer with hands-on experience building and maintaining cloud-native, distributed systems at scale. Skilled in developing and operating high-availability platforms, automating infrastructure, and applying distributed systems principles to complex services such as Azure Kubernetes Service.
+Professional software engineer with hands-on experience building and maintaining cloud-native, distributed systems at scale. Skilled in developing and operating high-availability platforms, automating infrastructure, and applying distributed systems principles to complex services such as Azure Kubernetes Fleet Manager.
 
 
 ## Work Experience
@@ -18,7 +18,7 @@ Professional software engineer with hands-on experience building and maintaining
 *Engineer on Azure Kubernetes Service Fleet Manager*<span class="spacer"></span>Go | Azure | Distributed Systems
 
 - **Platform Development:** Contributed to AKS Fleet Manager, a distributed control plane enabling coordinated management, update orchestration, and workload propagation across multi-cluster Kubernetes environments at scale.
-- **Feature Development:** Core contributor to Fleet Managed Cilium Cluster Mesh, driving the feature from development to public preview. Showcased at KubeCon 2026, enabling transparent cross-cluster pod-to-pod connectivity for enterprise multi-cluster deployments.
+- **Feature Development:** Owner and core contributor to Fleet Managed Cilium Cluster Mesh, driving the feature from development to public preview. Showcased at KubeCon 2026, enabling transparent cross-cluster pod-to-pod connectivity for enterprise multi-cluster deployments. See: https://azure.microsoft.com/en-us/blog/powering-multi-cluster-workloads-with-seamless-cross-cluster-networking-for-azure-kubernetes-fleet-manager/
 - **AI-Native Development:** Drove and enabled team members to onboard onto AI native tooling, through development of custom tooling fit for the teams particular use cases 
 - **Cloud-Native Engineering:** Applied distributed systems principles in Go to design and maintain Fleet Manager's core infrastructure, including multi-cluster control plane orchestration, networking integrations, and resource propagation.
 
@@ -36,13 +36,9 @@ Professional software engineer with hands-on experience building and maintaining
 
 **Languages** | Go, Typescript 
 
-**Frontend** | Next.js, Vite, Tailwind
+**Infra** | Azure, Docker, Kubernetes
 
-**Backend** | Go, Node.js/Express.js, Hono, Elysia
-
-**Database** | PostgreSQL, NoSQL (MongoDB), VectorDB (Qdrant, Pinecone)
-
-**DevOps** | Azure, AWS, Docker, Kubernetes
+**Database** | PostgreSQL, NoSQL (MongoDB, Cosmos DB), VectorDB (Qdrant, Pinecone)
 
 
 <div className="vertical-spacer"></div>
@@ -52,4 +48,3 @@ Professional software engineer with hands-on experience building and maintaining
 ## Education
 
 **University of Technology Sydney** - Bachelor of Computing Science (Honours)<span class="spacer"></span>
-
