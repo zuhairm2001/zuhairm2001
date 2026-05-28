@@ -1,7 +1,7 @@
 # Zuhair Malik
 
 
-Sydney | +61 434 802 898 | me@zuhairmalik.dev 
+Sydney | +61 434 802 898 | me@zuhairmalik.dev
 
 https://zuhairmalik.dev
 https://www.linkedin.com/in/zuhair-malik-53322919b/
@@ -17,10 +17,11 @@ Professional software engineer with hands-on experience building and maintaining
 ### Software Engineer | Microsoft <span class="spacer"></span>Dec 2025 - Present
 *Engineer on Azure Kubernetes Service Fleet Manager*<span class="spacer"></span>Go | Azure | Distributed Systems
 
-- **Platform Development:** Contributed to AKS Fleet Manager, a distributed control plane enabling coordinated management, update orchestration, and workload propagation across multi-cluster Kubernetes environments at scale.
-- **Feature Development:** Owner and core contributor to Fleet Managed Cilium Cluster Mesh, driving the feature from development to public preview. Showcased at KubeCon 2026, enabling transparent cross-cluster pod-to-pod connectivity for enterprise multi-cluster deployments. See: https://azure.microsoft.com/en-us/blog/powering-multi-cluster-workloads-with-seamless-cross-cluster-networking-for-azure-kubernetes-fleet-manager/
-- **AI-Native Development:** Drove and enabled team members to onboard onto AI native tooling, through development of custom tooling fit for the teams particular use cases 
-- **Cloud-Native Engineering:** Applied distributed systems principles in Go to design and maintain Fleet Manager's core infrastructure, including multi-cluster control plane orchestration, networking integrations, and resource propagation.
+- Contributed to Azure Kubernetes Fleet Manager’s managed multi-cluster networking platform, enabling Fleet-orchestrated Cilium Cluster Mesh for enterprise AKS deployments supporting up to **255 clusters per mesh**. See: https://azure.microsoft.com/en-us/blog/powering-multi-cluster-workloads-with-seamless-cross-cluster-networking-for-azure-kubernetes-fleet-manager/
+- Improved the scalability of Fleet-managed cluster networking by contributing to architecture that reduced mesh coordination complexity from **O(N²) to O(N)**.
+- Strengthened reliability of distributed Fleet workflows by hardening validation, lifecycle handling, state transitions, and delete/update behavior across cluster-mesh operations.
+- Improved developer velocity and integration confidence by expanding local and automated validation workflows for Cluster Mesh, including API/gRPC test coverage and resource-efficient local development environments.
+- Supported preview launch readiness for customer-facing Fleet networking capabilities through staging validation, bug bash feedback, reliability monitoring, and launch enablement.
 
 ### Software Engineer | AI Consulting Group <span class="spacer"></span>Feb 2025 - Nov 2025
 *Full-Stack Engineer & Technical Lead*<span class="spacer"></span>TypeScript | Node.js | AWS/Azure
@@ -34,11 +35,16 @@ Professional software engineer with hands-on experience building and maintaining
 
 ## Technical Skills
 
-**Languages** | Go, Typescript 
+**Languages:** Go, TypeScript
 
-**Infra** | Azure, Docker, Kubernetes
+**Cloud & Infrastructure:** Azure, AKS, Azure Kubernetes Fleet Manager, Kubernetes, Docker
 
-**Database** | PostgreSQL, NoSQL (MongoDB, Cosmos DB), VectorDB (Qdrant, Pinecone)
+**Platform Engineering:** Distributed systems, multi-cluster orchestration, control planes, asynchronous workflows, reliability engineering
+
+**Backend & APIs:** gRPC, REST APIs, Node.js, Bun, protobuf
+
+**Datastores:** PostgreSQL, Cosmos DB, MongoDB, vector databases
+
 
 
 <div className="vertical-spacer"></div>
