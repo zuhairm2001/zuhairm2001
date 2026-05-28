@@ -17,11 +17,11 @@ Professional software engineer with hands-on experience building and maintaining
 ### Software Engineer | Microsoft <span class="spacer"></span>Dec 2025 - Present
 *Engineer on Azure Kubernetes Service Fleet Manager*<span class="spacer"></span>Go | Azure | Distributed Systems
 
-- Contributed to Azure Kubernetes Fleet Manager’s managed multi-cluster networking platform, enabling Fleet-orchestrated Cilium Cluster Mesh for enterprise AKS deployments supporting up to **255 clusters per mesh**. See: https://azure.microsoft.com/en-us/blog/powering-multi-cluster-workloads-with-seamless-cross-cluster-networking-for-azure-kubernetes-fleet-manager/
-- Improved the scalability of Fleet-managed cluster networking by contributing to architecture that reduced mesh coordination complexity from **O(N²) to O(N)**.
-- Strengthened reliability of distributed Fleet workflows by hardening validation, lifecycle handling, state transitions, and delete/update behavior across cluster-mesh operations.
-- Improved developer velocity and integration confidence by expanding local and automated validation workflows for Cluster Mesh, including API/gRPC test coverage and resource-efficient local development environments.
-- Supported preview launch readiness for customer-facing Fleet networking capabilities through staging validation, bug bash feedback, reliability monitoring, and launch enablement.
+- **Shipped managed multi-cluster networking** for Azure Kubernetes Fleet Manager, enabling Fleet-orchestrated Cilium Cluster Mesh across up to **255 AKS clusters per mesh** for enterprise customers. See: https://azure.microsoft.com/en-us/blog/powering-multi-cluster-workloads-with-seamless-cross-cluster-networking-for-azure-kubernetes-fleet-manager/
+- **Implemented a mesh coordination model** that reduced setup complexity from **O(N²) to O(N)**, unlocking the platform's 255-cluster scale ceiling.
+- **Hardened reliability of distributed reconciliation** by redesigning validation, lifecycle handling, and delete/update state transitions across Cluster Mesh operations, eliminating a class of stuck-resource failures surfaced in preview.
+- **Accelerated developer iteration** and caught regressions earlier by building resource-efficient local dev environments and expanding gRPC/API integration test coverage for Cluster Mesh.
+- **Drove preview launch readiness** through staging validation, bug-bash triage, and production reliability monitoring for the customer-facing rollout.
 
 ### Software Engineer | AI Consulting Group <span class="spacer"></span>Feb 2025 - Nov 2025
 *Full-Stack Engineer & Technical Lead*<span class="spacer"></span>TypeScript | Node.js | AWS/Azure
