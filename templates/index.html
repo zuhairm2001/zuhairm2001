@@ -5,25 +5,29 @@
         <link rel="stylesheet" href="/static/style.css" />
         <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
     </head>
-    <body>
-        <div style="container">
-            <h1>
-                hi
+    <body class="index-page has-site-menu">
+        <nav class="site-menu" aria-label="Primary navigation">
+            <a class="site-menu__brand" href="/">zuhairmalik</a>
+            <ul class="site-menu__links">
+                <li><a href="/writings">writings</a></li>
+            </ul>
+        </nav>
+        <main class="container index-content">
+            <h2>hi
                 <span class="ellipsis"
                     ><span class="dot">.</span><span class="dot">.</span
                     ><span class="dot">.</span></span
                 >
-            </h1>
-            <h2>i'm zuhair malik</h2>
+            </h2>
             <h3>
                 software engineer @
                 <code style="color: var(text-bright)">microsoft</code>
             </h3>
-            <h3>working on the azure kubernetes fleet manager team</h3>
+            <h3>on azure kubernetes fleet manager</h3>
 
             <h3>
-                contact me at
                 <blockquote>
+                contact me at
                     <a href="mailto:me@zuhairmalik.dev">me@zuhairmalik.dev</a>
                 </blockquote>
             </h3>
@@ -38,8 +42,8 @@
             </h3>
             <h3>
                 if you wish, you can read my thoughts on random topics
-                <a href="https://zuhairmalik.dev/writings"> here </a>
+                <a href="/writings"> here </a>
             </h3>
-        </div>
+        </main>
     </body>
 </html>

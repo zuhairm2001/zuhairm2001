@@ -1,12 +1,11 @@
-package handlers 
+package handlers
 
 import (
-
 	"html/template"
+	"net/http"
 	"os"
 	"path/filepath"
 	"strings"
-	"net/http"
 
 	"github.com/adrg/frontmatter"
 	"github.com/gomarkdown/markdown"
@@ -34,10 +33,8 @@ type WritingPageData struct {
 	Content template.HTML
 }
 
-
 var writingsTmpl = template.Must(template.ParseFiles("templates/writings.html"))
 var writingTmpl = template.Must(template.ParseFiles("templates/writing.html"))
-
 
 func WritingsHandler(w http.ResponseWriter, r *http.Request) {
 	var posts []PostSummary
@@ -88,7 +85,14 @@ func WritingsHandler(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	writingsTmpl.Execute(w, WritingsPageData{Posts: posts})
+	tmpl, err := templateFor("templates/writings.html", writingsTmpl)
+	if err != nil {
+		http.Error(w, "Failed to parse writings template", http.StatusInternalServerError)
+		return
+	}
+	if err := tmpl.Execute(w, WritingsPageData{Posts: posts}); err != nil {
+		http.Error(w, "Failed to render writings", http.StatusInternalServerError)
+	}
 }
 
 func WritingHandler(w http.ResponseWriter, r *http.Request) {
@@ -126,11 +130,18 @@ func WritingHandler(w http.ResponseWriter, r *http.Request) {
 	// Convert markdown to HTML
 	htmlContent := mdToHTML(content)
 
-	writingTmpl.Execute(w, WritingPageData{
+	tmpl, err := templateFor("templates/writing.html", writingTmpl)
+	if err != nil {
+		http.Error(w, "Failed to parse writing template", http.StatusInternalServerError)
+		return
+	}
+	if err := tmpl.Execute(w, WritingPageData{
 		Title:   meta.Title,
 		Date:    date,
 		Content: template.HTML(htmlContent),
-	})
+	}); err != nil {
+		http.Error(w, "Failed to render writing", http.StatusInternalServerError)
+	}
 }
 
 func mdToHTML(md []byte) []byte {
