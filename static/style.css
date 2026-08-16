@@ -407,17 +407,17 @@ select:focus {
     text-decoration: none;
 }
 
-/* Center the index page in the space beside the menu */
+/* Center the index content against the viewport, independent of the menu */
 .index-page {
     min-height: 100vh;
     margin: 0;
-    padding: 1rem 1rem 1rem calc(var(--site-menu-width) + 1rem);
+    padding: 1rem;
     display: grid;
-    place-items: normal auto;
+    place-items: center auto;
 }
 
 .index-content {
-    width: 30%;
+    width: min(30rem, calc(100vw - 2rem));
     text-align: center;
 }
 
