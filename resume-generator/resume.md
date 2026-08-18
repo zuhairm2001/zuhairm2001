@@ -35,15 +35,28 @@ Professional software engineer with hands-on experience building and maintaining
 
 ## Technical Skills
 
-**Languages:** Go, TypeScript
-
-**Cloud & Infrastructure:** Azure, AKS, Azure Kubernetes Fleet Manager, Kubernetes, Docker
-
-**Platform Engineering:** Distributed systems, multi-cluster orchestration, control planes, asynchronous workflows, reliability engineering
-
-**Backend & APIs:** gRPC, REST APIs, Node.js, Bun, protobuf
-
-**Datastores:** PostgreSQL, Cosmos DB, MongoDB, Vector databases
+<table class="skills-table">
+  <tr>
+    <td><strong>Languages:</strong></td>
+    <td>Go, TypeScript</td>
+  </tr>
+  <tr>
+    <td><strong>Cloud & Infrastructure:</strong></td>
+    <td>Azure, AKS, Azure Kubernetes Fleet Manager, Kubernetes, Docker</td>
+  </tr>
+  <tr>
+    <td><strong>Platform Engineering:</strong></td>
+    <td>Distributed systems, multi-cluster orchestration, control planes, asynchronous workflows, reliability engineering</td>
+  </tr>
+  <tr>
+    <td><strong>Backend & APIs:</strong></td>
+    <td>gRPC, REST APIs, Node.js, Bun, protobuf</td>
+  </tr>
+  <tr>
+    <td><strong>Datastores:</strong></td>
+    <td>PostgreSQL, Cosmos DB, MongoDB, Vector databases</td>
+  </tr>
+</table>
 
 
 

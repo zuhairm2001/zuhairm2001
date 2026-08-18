@@ -117,3 +117,27 @@ strong, em, a {
 .headerInfo > ul > li:not(:last-child):after {
     content: "•";
     margin-left: 8px;
+}
+
+.skills-table {
+    width: 100%;
+    margin: 4px 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.skills-table td {
+    color: black;
+    padding: 1px 0;
+    vertical-align: top;
+}
+
+.skills-table td:first-child {
+    width: 150px;
+    padding-right: 12px;
+    white-space: nowrap;
+}
+
+.skills-table td:last-child {
+    width: auto;
+}
