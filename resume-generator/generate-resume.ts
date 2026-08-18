@@ -57,6 +57,7 @@ try {
       ContentType: "application/pdf",
     }),
   );
+  console.log("Uploaded resume!")
 } catch (error) {
   console.error("Error uploading file to S3:", error);
   throw error;
