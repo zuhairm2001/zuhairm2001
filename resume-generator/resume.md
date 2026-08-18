@@ -18,9 +18,9 @@ Professional software engineer with hands-on experience building and maintaining
 *Engineer on Azure Kubernetes Service Fleet Manager*<span class="spacer"></span>Go | Azure | Distributed Systems
 
 - **Shipped managed multi-cluster networking** for Azure Kubernetes Fleet Manager, enabling Fleet-orchestrated Cilium Cluster Mesh across up to **255 AKS clusters per mesh** for enterprise customers. See: https://azure.microsoft.com/en-us/blog/powering-multi-cluster-workloads-with-seamless-cross-cluster-networking-for-azure-kubernetes-fleet-manager/
-- **Implemented a mesh coordination model** that reduced setup complexity from **O(N²) to O(N)**, unlocking the platform's 255-cluster scale ceiling.
+- **Designed and implemented** multi-cluster Certificate Authority rotation orchestration for Fleet Manager member clusters, enabling zero-downtime certificate renewal across Cilium Cluster Mesh connected clusters without weakening trust boundaries.
 - **Hardened reliability of distributed reconciliation** by redesigning validation, lifecycle handling, and delete/update state transitions across Cluster Mesh operations, eliminating a class of stuck-resource failures surfaced in preview.
-- **Accelerated developer iteration** and caught regressions earlier by building resource-efficient local dev environments and expanding gRPC/API integration test coverage for Cluster Mesh.
+- **Accelerated developer iteration** and caught regressions earlier by building resource-efficient local dev environments simulating a complex distributed system and expanding gRPC/API integration test coverage for Cluster Mesh.
 - **Drove preview launch readiness** through staging validation, bug-bash triage, and production reliability monitoring for the customer-facing rollout.
 
 ### Software Engineer | AI Consulting Group <span class="spacer"></span>Feb 2025 - Nov 2025
@@ -43,7 +43,7 @@ Professional software engineer with hands-on experience building and maintaining
 
 **Backend & APIs:** gRPC, REST APIs, Node.js, Bun, protobuf
 
-**Datastores:** PostgreSQL, Cosmos DB, MongoDB, vector databases
+**Datastores:** PostgreSQL, Cosmos DB, MongoDB, Vector databases
 
 
 
