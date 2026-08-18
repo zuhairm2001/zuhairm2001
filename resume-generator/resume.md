@@ -18,7 +18,7 @@ Professional software engineer with hands-on experience building and maintaining
 *Engineer on Azure Kubernetes Service Fleet Manager*<span class="spacer"></span>Go | Azure | Distributed Systems
 
 - **Shipped managed multi-cluster networking** for Azure Kubernetes Fleet Manager, enabling Fleet-orchestrated Cilium Cluster Mesh across up to **255 AKS clusters per mesh** for enterprise customers. See: https://azure.microsoft.com/en-us/blog/powering-multi-cluster-workloads-with-seamless-cross-cluster-networking-for-azure-kubernetes-fleet-manager/
-- **Designed and implemented** multi-cluster Certificate Authority rotation orchestration for Fleet Manager member clusters, enabling zero-downtime certificate renewal across Cilium Cluster Mesh connected clusters without weakening trust boundaries.
+- **Designed and implemented** multi-cluster Certificate Authority rotation orchestration for Fleet Manager member clusters, enabling zero-downtime certificate renewal across Cluster Mesh connected clusters without weakening trust boundaries.
 - **Hardened reliability of distributed reconciliation** by redesigning validation, lifecycle handling, and delete/update state transitions across Cluster Mesh operations, eliminating a class of stuck-resource failures surfaced in preview.
 - **Accelerated developer iteration** and caught regressions earlier by building resource-efficient local dev environments simulating a complex distributed system and expanding gRPC/API integration test coverage for Cluster Mesh.
 - **Drove preview launch readiness** through staging validation, bug-bash triage, and production reliability monitoring for the customer-facing rollout.

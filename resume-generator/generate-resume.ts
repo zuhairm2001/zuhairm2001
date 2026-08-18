@@ -21,8 +21,8 @@ const fullHTML = `
 </html>
 `;
 
-(async () => {
-  const browser = await puppeteer.launch();
+const browser = await puppeteer.launch();
+try {
   const page = await browser.newPage();
   await page.setContent(fullHTML, { waitUntil: "load" });
   await page.pdf({
@@ -30,9 +30,10 @@ const fullHTML = `
     format: "A4",
     printBackground: true,
   });
-  await browser.close();
   console.log("PDF generated: output.pdf");
-})();
+} finally {
+  await browser.close();
+}
 
 const endpoint = Bun.env.S3_ENDPOINT!;
 const accessKeyId = Bun.env.S3_ACCESS_KEY!;
@@ -58,4 +59,5 @@ try {
   );
 } catch (error) {
   console.error("Error uploading file to S3:", error);
+  throw error;
 }
